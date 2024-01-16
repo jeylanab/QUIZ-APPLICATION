@@ -2,17 +2,16 @@
 
 ## Description 
 
-The Web Quiz App is a lightweight and user-friendly quiz application designed for testing knowledge on Web development subject. 
+The Web Quiz App is a lightweight and user-friendly quiz application designed for testing knowledge on Web development subjects. 
 It features a straightforward interface, multiple-choice questions, a timer countdown, instant feedback on correct/wrong answers, and a final score display.
 
 ## Installation
 
-Deployed Page link: https://jeylanab.github.io/Console-Finances/
-
-GitHub Repo Link: https://github.com/jeylanab/Console-Finances
+Deployed Page link:[https://jeylanab.github.io/QUIZ-APPLICATION/]
+]
+GitHub Repo Link: [https://github.com/jeylanab/QUIZ-APPLICATION
  
-The program is designed to work with a 2D array of financial data. Replace the finances
-array with your data to perform the analysis. The results are then displayed in the console. Example Output:
+
 
 ## Usage 
 ### Start the Quiz:
@@ -39,8 +38,8 @@ At the end of the quiz, view your final score.
 
 ## Credit 
 
-Google Search engine, Bing and Others.
+Google Search engine, Bing, and Others.
 
 ## Licence 
 
-MIT licenced
+MIT licensed
