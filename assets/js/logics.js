@@ -90,9 +90,15 @@
   
       submitButton.addEventListener("click", function () {
         var initials = initialsInput.value;
-    
+        var highScoreList = document.getElementById("highscore");
         
-      });
+        // Create a new list item
+        var newHighScore = document.createElement("li");
+        newHighScore.textContent = `${initials} : ${score}`;
+
+        // Append the new high score to the high score list
+        highScoreList.appendChild(newHighScore);
+    });
     }
   
     function startTimer() {
@@ -115,42 +121,3 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   // // Stop the timer
-      // clearInterval(timer);
-  
-      // // Display the final score
-      // document.getElementById("start-screen").classList.add("hide");
-
-      // questionBox.classList.add("hide");
-      // feedbackBox.textContent = ""; 
-      // // Clear feedback before displaying the final score
-      // document.getElementById("end-screen").classList.remove("hide");
-      // finalScoreDisplay.textContent = score;
-  
-      // // Handle submitting initials (you can add more logic here)
-      // submitButton.addEventListener("click", function () {
-      //   var initials = initialsInput.value;
-      //   console.log("Initials submitted:", initials);
-      //   // You can add logic to save the score with initials
-      // });
