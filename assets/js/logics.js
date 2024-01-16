@@ -8,24 +8,11 @@ document.addEventListener("DOMContentLoaded", function () {
     var finalScoreDisplay = document.getElementById("final-score");
     var initialsInput = document.getElementById("initials");
     var submitButton = document.getElementById("submit");
+    // var endScreen = document.getElementById("end-screen")
   
     var currentIndex = 0;
     var score = 0;
     var timeLeft = 60; 
-  
-
-  
-    function startQuiz() {
-      // Hide the start screen and show the questions
-      document.getElementById("start-screen").classList.add("hide");
-      questionBox.classList.remove("hide");
-  
-      // Display the first question
-      showQuestion();
-  
-      // Start the timer
-      startTimer();
-    }
   
     function showQuestion() {
       var currentQuestion = questions[currentIndex];
@@ -41,7 +28,22 @@ document.addEventListener("DOMContentLoaded", function () {
         choiceButton.addEventListener("click", checkAnswer);
         choicesBox.appendChild(choiceButton);
       }
+
     }
+  
+  
+    function startQuiz() {
+      // Hide the start screen and show the questions
+      document.getElementById("start-screen").classList.add("hide");
+      questionBox.classList.remove("hide");
+  
+      // Display the first question
+      showQuestion();
+  
+      // Start the timer
+      startTimer();
+    }
+  
   
     function checkAnswer(event) {
       var selectedAnswer = event.target.textContent;
@@ -51,10 +53,34 @@ document.addEventListener("DOMContentLoaded", function () {
       if (selectedAnswer === currentQuestion.correctAnswer) {
         feedbackBox.textContent = "Correct!";
         score++;
+        feedbackBox.classList.remove("hide");
       } else {
         feedbackBox.textContent = "Wrong! -10 seconds";
         timeLeft -= 10;
       }
+
+      
+    function endQuiz() {
+      if(timeLeft <= 0){
+
+     
+      document.getElementById("end-screen").classList.remove("hide");
+      document.getElementById("start-screen").classList.add("hide");
+      questionBox.classList.add("hide");
+      feedbackBox.textContent = ""; 
+      finalScoreDisplay.textContent = score;
+     
+    }
+    
+
+       // Handle submitting initials (you can add more logic here)
+        // submitButton.addEventListener("click", function () {
+        // var initials = initialsInput.value;
+        // console.log("Initials submitted:", initials);
+        // You can add logic to save the score with initials
+
+     
+    }
   
       // Move to the next question or end the quiz
       currentIndex++;
@@ -65,23 +91,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
   
-    function endQuiz() {
-      // Stop the timer
-      clearInterval(timer);
-  
-      // Display the final score and feedback
-      questionBox.classList.add("hide");
-      feedbackBox.textContent = ""; // Clear feedback before displaying the final score
-      document.getElementById("end-screen").classList.remove("hide");
-      finalScoreDisplay.textContent = score;
-  
-      // Handle submitting initials (you can add more logic here)
-      submitButton.addEventListener("click", function () {
-        var initials = initialsInput.value;
-        console.log("Initials submitted:", initials);
-        // You can add logic to save the score with initials
-      });
-    }
   
     function startTimer() {
       var timer = setInterval(function () {
@@ -99,3 +108,52 @@ document.addEventListener("DOMContentLoaded", function () {
     startButton.addEventListener("click", startQuiz);
   });
   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   // // Stop the timer
+      // clearInterval(timer);
+  
+      // // Display the final score
+      // document.getElementById("start-screen").classList.add("hide");
+
+      // questionBox.classList.add("hide");
+      // feedbackBox.textContent = ""; 
+      // // Clear feedback before displaying the final score
+      // document.getElementById("end-screen").classList.remove("hide");
+      // finalScoreDisplay.textContent = score;
+  
+   
+      // });
