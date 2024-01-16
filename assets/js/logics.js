@@ -61,23 +61,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
       
     function endQuiz() {
-      if(timeLeft <= 0){
-
-     
-      document.getElementById("end-screen").classList.remove("hide");
-      document.getElementById("start-screen").classList.add("hide");
-      questionBox.classList.add("hide");
-      feedbackBox.textContent = ""; 
-      finalScoreDisplay.textContent = score;
-     
-    }
+     clearInterval();
     
+    document.getElementById("end-screen").classList.remove("hide");
+    document.getElementById("start-screen").classList.add("hide");
+    questionBox.classList.add("hide");
+    feedbackBox.textContent = ""; 
+    finalScoreDisplay.textContent = score;
 
-       // Handle submitting initials (you can add more logic here)
-        // submitButton.addEventListener("click", function () {
-        // var initials = initialsInput.value;
-        // console.log("Initials submitted:", initials);
-        // You can add logic to save the score with initials
+
 
      
     }
@@ -155,5 +147,9 @@ document.addEventListener("DOMContentLoaded", function () {
       // document.getElementById("end-screen").classList.remove("hide");
       // finalScoreDisplay.textContent = score;
   
-   
+      // // Handle submitting initials (you can add more logic here)
+      // submitButton.addEventListener("click", function () {
+      //   var initials = initialsInput.value;
+      //   console.log("Initials submitted:", initials);
+      //   // You can add logic to save the score with initials
       // });
