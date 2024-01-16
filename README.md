@@ -31,10 +31,10 @@ Instantly receive feedback on each answer - whether correct or wrong.
 
 At the end of the quiz, view your final score.
 
-![Profit/Loss Analysis]([image_url](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060049.png?raw=true)
-![Profit/Loss Analysis] ![image](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060028.png?raw=true)
+![HOME PAGE]![image_url](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060049.png?raw=true)
+![QUESTIONS] ![image](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060028.png?raw=true)
 
-![Profit /Lose Analysis] ![image](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060120.png?raw=true)
+![REVIEW] ![image](https://github.com/jeylanab/QUIZ-APPLICATION/blob/main/assets/Images/Screenshot%202024-01-16%20060120.png?raw=true)
 
 
 ## Credit 
