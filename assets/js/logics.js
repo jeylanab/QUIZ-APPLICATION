@@ -51,10 +51,15 @@ document.addEventListener("DOMContentLoaded", function () {
   
       // Check if the selected answer is correct
       if (selectedAnswer === currentQuestion.correctAnswer) {
+        var correctSound = document.getElementById("correctSound");
+        correctSound.play();
         feedbackBox.textContent = "Correct!";
+      
         score++;
         feedbackBox.classList.remove("hide");
       } else {
+        var incorrectSound = document.getElementById("incorrectSound");
+        incorrectSound.play();
         feedbackBox.textContent = "Wrong! -10 seconds";
         timeLeft -= 10;
       }
